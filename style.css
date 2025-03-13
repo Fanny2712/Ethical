@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0a192f;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Header section styles */
+header {
+  position: relative;
+  text-align: center;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* White text on the image */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Optional: Adds shadow to text for better readability */
+}
+
+.header-content h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.header-content p {
+  font-size: 1.5rem;
+  margin: 10px 0 0;
+}
+
+nav {
+  background-color: #1e3c72;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00ffcc;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  color: #00ffcc;
+  border-bottom: 2px solid #00ffcc;
+  padding-bottom: 5px;
+  font-size: 2em;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: #1e3c72;
+  border: 2px solid #00ffcc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 255, 204, 0.3);
+}
+
+.grid-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.grid-item h3 {
+  margin: 10px 0;
+  color: #00ffcc;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.about-content img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #00ffcc;
+}
+
+footer {
+  text-align: center;
+  background-color: #162447;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #ffffff;
+}
